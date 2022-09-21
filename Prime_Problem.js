@@ -1,3 +1,4 @@
+
 function check_prime(number){
     let factors=0;
     for(let i=1;i<=number;i++){
@@ -9,8 +10,9 @@ function check_prime(number){
         return true;
     }else{
         return false;
-    }
-}
+    }   
+ }    
+ 
 let answer = check_prime(17);
 
 if(answer===true){
@@ -18,3 +20,4 @@ if(answer===true){
 }else{
     console.log("Not Prime");
 }
+
