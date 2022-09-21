@@ -1,21 +1,23 @@
-function check_prime(num){
+
+function check_prime(number){
     let factors=0;
-    for(let i=1;i<=num;i++){
-        if(num%i===0){
+    for(let i=1;i<=number;i++){
+        if(number%i===0){
             factors++;
         }
     }
     if(factors===2){
         return true;
     }else{
-	  return false;
-    }
-}
+        return false;
+    }   
+ }    
+ 
+let answer = check_prime(17);
 
-let ans = check_prime(17);
-
-if(ans===true){
-   console.log("Prime");
+if(answer===true){
+    console.log("Prime");
 }else{
-   console.log("Not Prime");
+    console.log("Not Prime");
 }
+
